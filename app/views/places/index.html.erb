@@ -1,0 +1,13 @@
+<h1>Places I've Been</h1>
+
+<ol>
+  <% for place in @places %>
+    <li style="margin-bottom: 15px;">
+      <%= link_to place["name"], "/places/#{place["id"]}" %>
+    </li>
+  <% end %>
+</ol>
+
+<p style="margin-top: 50px;">
+  <%= link_to "New Place", "/places/new" %>
+</p>
