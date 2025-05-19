@@ -4,12 +4,13 @@
 
 <ul>
   <% for entry in @entries %>
-    <li style="margin-bottom: 15px;">
-      <strong><%= entry["title"] %></strong><br>
-      <%= entry["date"] %><br>
-      <%= entry["description"] %>
+   
+   <li style="margin-bottom: 15px;">
+     <strong><%= entry["title"] %></strong><br>
+     <%= entry["occurred_on"]&.strftime("%B %-d, %Y") %><br>
+     <%= entry["description"] %>
     </li>
-    <br>
+    
   <% end %>
 </ul>
 

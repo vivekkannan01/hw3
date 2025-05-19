@@ -11,7 +11,7 @@
   <!-- Entry Date -->
   <p>
     <label>Date:</label><br>
-    <input type="date" name="date">
+    <input type="date" name="occurred_on">
   </p>
 
   <!-- Entry Description -->
@@ -26,3 +26,7 @@
   <!-- Submit Button -->
   <button>Submit</button>
 </form>
+
+<p>
+  <a href="/places/<%= @place["id"] %>">Back to <%= @place["name"] %></a>
+</p>
